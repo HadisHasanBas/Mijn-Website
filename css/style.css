@@ -1,0 +1,65 @@
+.oranje {
+  color: #c65112;
+}
+aside {
+  display: none;
+}
+#carouselExampleControls {
+  height: 400px; /* kies zelf hoogte */
+}
+
+#carouselExampleControls .carousel-inner,
+#carouselExampleControls .carousel-item,
+#carouselExampleControls img {
+  height: 100%;
+}
+
+#carouselExampleControls img {
+  object-fit: cover;
+}
+.aside {
+  display: none;
+}
+
+body,
+figcaption {
+  background-color: black;
+  color: #f28749;
+  font-family: serif;
+}
+.bg-danger {
+  background-color: blue;
+}
+.max_grote {
+  max-width: 250px;
+  max-height: 300px;
+}
+.auto_text {
+  font-size: 4vw;
+  letter-spacing: 1.5vw;
+}
+
+.picture {
+  max-height: 250px;
+  object-fit: cover;
+}
+.aside-length {
+  max-width: 200px;
+}
+a {
+  text-decoration: none;
+  color: #f28749;
+}
+
+button {
+  color: #f28749;
+}
+
+span {
+  color: red;
+}
+@media (min-width: 767.98px) {
+  aside {
+    display: block;
+  }
+}
