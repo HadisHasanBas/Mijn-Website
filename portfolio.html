@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="stylesheet" href="css/reset.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -22,7 +23,7 @@
       defer
     ></script>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/reset.css" />
+    <script src="js/script.js" defer></script>
   </head>
 
   <body class="m-0 border-0 bd-example">
@@ -30,10 +31,10 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="#" id="top"
           ><img
-            src="assets/images/Logo.png"
+            src="assets/images/logo.png"
             alt="Logo"
-            width="100"
-            height="100"
+            width="175"
+            height="120"
           />
         </a>
         <button
@@ -48,13 +49,18 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-3 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a
+                class="nav-link active p-3 fs-4"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
             </li>
             <li class="dropdown nav-item">
               <a
-                class="dropdown-toggle nav-link active"
+                class="dropdown-toggle p-3 fs-4 nav-link"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -64,54 +70,55 @@
               </a>
               <ul class="dropdown-menu bg-danger">
                 <li>
-                  <a class="dropdown-item" href="projecten/Schaakbord.html"
+                  <a class="dropdown-item fs-5" href="projecten/Schaakbord.html"
                     >Schaakbord</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="projecten/PCB_Horloge.html"
+                  <a
+                    class="dropdown-item fs-5"
+                    href="projecten/PCB_Horloge.html"
                     >PCB Horloge</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="projecten/Shop_Website.html"
+                  <a
+                    class="dropdown-item fs-5"
+                    href="projecten/Shop_Website.html"
                     >Shop Website</a
                   >
                 </li>
                 <li>
                   <a
-                    class="dropdown-item"
+                    class="dropdown-item fs-5"
                     href="projecten/Multi_Control_Panel.html"
                     >Multi-Control Panel</a
                   >
                 </li>
                 <li>
                   <a
-                    class="dropdown-item"
+                    class="dropdown-item fs-5"
                     href="projecten/Single_Board_Computer.html"
                     >Single Board Computer</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="projecten/Smart_Serre.html"
+                  <a
+                    class="dropdown-item fs-5"
+                    href="projecten/Smart_Serre.html"
                     >Smart Serre</a
                   >
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a
-                    class="dropdown-item active"
-                    aria-current="page"
-                    href="portfolio.html"
+                  <a class="dropdown-item fs-5" href="portfolio.html"
                     >Overzicht Projecten</a
                   >
                 </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="contact.html"
-                >Contact</a
-              >
+              <a class="nav-link p-3 fs-4" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -121,37 +128,40 @@
     <div class="container-fluid">
       <div class="row">
         <aside class="col-md aside-length">
-          <h2 class="text-uppercase fw-bolder fs-5 pt-3">Socials</h2>
+          <div class="sticky-top pt-3">
+            <h2 class="text-uppercase fw-bolder p-2 fs-2">Socials</h2>
 
-          <p class="oranje">
-            <a href="https://x.com/hadis_hasan_bas" target="_blank">
-              <i class="bi bi-twitter-x oranje fs-4"></i>
-            </a>
-            <br />
-            <a
-              href="https://www.linkedin.com/in/hadis-hasan-bas-6939b0285/"
-              target="_blank"
-            >
-              <i class="bi bi-linkedin oranje fs-4"></i>
-            </a>
-            <br />
-            <a href="mailto:hadisbas12345@gmail.com" target="_blank">
-              <i class="bi bi-mailbox oranje fs-4"></i>
-            </a>
-            <br />
-            <a href="https://www.facebook.com/hadis.bas.7" target="_blank">
-              <i class="bi bi-facebook oranje fs-4"></i>
-            </a>
-            <br />
-            <a
-              href="https://discord.com/users/329748677478580225"
-              target="_blank"
-            >
-              <i class="bi bi-discord oranje fs-4"></i>
-            </a>
-            <br />
-            <i class="bi bi-telephone oranje fs-4"></i> +32456081850
-          </p>
+            <p class="oranje">
+              <a href="https://x.com/hadis_hasan_bas" target="_blank">
+                <i class="bi bi-twitter-x oranje fs-1 p-3"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/hadis-hasan-bas-6939b0285/"
+                target="_blank"
+              >
+                <i class="bi bi-linkedin oranje fs-1 p-3"></i>
+              </a>
+              <br />
+              <a href="mailto:hadisbas12345@gmail.com" target="_blank">
+                <i class="bi bi-mailbox oranje fs-1 p-3"></i>
+              </a>
+              <a href="https://www.facebook.com/hadis.bas.7" target="_blank">
+                <i class="bi bi-facebook oranje fs-1 p-3"></i>
+              </a>
+              <br />
+              <a
+                href="https://discord.com/users/329748677478580225"
+                target="_blank"
+              >
+                <i class="bi bi-discord oranje fs-1 p-3"></i>
+              </a>
+              <a
+                class="bi bi-telephone oranje fs-1 p-3"
+                href="tel:+32456081850"
+                target="+32456081850"
+              ></a>
+            </p>
+          </div>
         </aside>
 
         <main class="col-md col-12 row">
@@ -161,7 +171,7 @@
             <a href="projecten/Schaakbord.html" rel="noopener">
               <figure>
                 <img
-                  src="assets/images/Schaakbord/Schaakbord.jpg"
+                  src="assets/images/schaakbord.webp"
                   class="img-fluid"
                   height="100%"
                 />
@@ -178,7 +188,7 @@
             <a href="projecten/PCB_Horloge.html" rel="noopener">
               <figure>
                 <img
-                  src="assets/images/PCB_Horloge/Embedded.jpg"
+                  src="assets/images/pcb-horloge.webp"
                   class="img-fluid"
                   height="100%"
                 />
@@ -195,7 +205,7 @@
             <a href="projecten/Shop_Website.html" rel="noopener">
               <figure>
                 <img
-                  src="assets/images/Website/Website.png"
+                  src="assets/images/website.webp"
                   class="img-fluid"
                   height="100%"
                 />
@@ -213,7 +223,7 @@
             <a href="projecten/Multi_Control_Panel.html" rel="noopener">
               <figure>
                 <img
-                  src="assets/images/Multi_Control_Panel/Multicontrol.jpg"
+                  src="assets/images/multicontrol.webp"
                   class="img-fluid"
                   height="100%"
                 />
@@ -233,7 +243,7 @@
             <a href="projecten/Single_Board_Computer.html" rel="noopener">
               <figure>
                 <img
-                  src="assets/images/SBC/SBC.jpg"
+                  src="assets/images/sbc.webp"
                   class="img-fluid"
                   height="100%"
                 />
@@ -249,7 +259,7 @@
             <a href="projecten/Smart_Serre.html" rel="noopener">
               <figure>
                 <img
-                  src="assets/images/Slimme_Serre/WheaterSystem.jpg"
+                  src="assets/images/slimme-serre.webp"
                   class="img-fluid"
                   height="100%"
                 />
@@ -265,7 +275,7 @@
       </div>
     </div>
     <footer class="container-fluid text-start bg-danger h6 small p-4">
-      &copy; 2025-2026 | Hadis Hasan Bas |
+      &copy; 2025-<a id="year"></a> | Hadis Hasan Bas |
       <a class="text-dark" href="#top">Top</a>
     </footer>
   </body>

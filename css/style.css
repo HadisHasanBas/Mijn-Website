@@ -4,17 +4,18 @@
 aside {
   display: none;
 }
-#carouselExampleControls {
-  height: 400px; /* kies zelf hoogte */
+#carouselExampleCaptions {
+  max-height: 400px; /* kies zelf hoogte */
+  height: 50vw;
 }
 
-#carouselExampleControls .carousel-inner,
-#carouselExampleControls .carousel-item,
-#carouselExampleControls img {
+#carouselExampleCaptions .carousel-inner,
+#carouselExampleCaptions .carousel-item,
+#carouselExampleCaptions img {
   height: 100%;
 }
 
-#carouselExampleControls img {
+#carouselExampleCaptions img {
   object-fit: cover;
 }
 .aside {
@@ -30,13 +31,13 @@ figcaption {
 .bg-danger {
   background-color: blue;
 }
-.max_grote {
-  max-width: 250px;
-  max-height: 300px;
+
+.fs-1 {
+  font-size: calc(2.5rem + 1.5vw) !important;
 }
+
 .auto_text {
-  font-size: 4vw;
-  letter-spacing: 1.5vw;
+  font-size: 2.5vw;
 }
 
 .picture {
@@ -44,7 +45,7 @@ figcaption {
   object-fit: cover;
 }
 .aside-length {
-  max-width: 200px;
+  max-width: 225px;
 }
 a {
   text-decoration: none;
@@ -58,8 +59,20 @@ button {
 span {
   color: red;
 }
+
+section {
+  display: none;
+}
+
+footer {
+  margin-bottom: 0 !important ;
+}
 @media (min-width: 767.98px) {
   aside {
+    display: block;
+  }
+
+  section {
     display: block;
   }
 }

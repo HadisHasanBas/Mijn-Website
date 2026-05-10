@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Schaakbord</title>
+    <link rel="stylesheet" href="/css/reset.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -22,18 +23,18 @@
       defer
     ></script>
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/reset.css" />
+    <script src="/js/script.js" defer></script>
   </head>
 
   <body class="m-0 border-0 bd-example">
-    <nav class="bg-danger navbar navbar-expand-md">
+    <nav class="navbar navbar-expand-md bg-danger">
       <div class="container-fluid">
         <a class="navbar-brand" href="#" id="top"
           ><img
-            src="/assets/images/Logo.png"
+            src="/assets/images/logo.png"
             alt="Logo"
-            width="100"
-            height="100"
+            width="175"
+            height="120"
           />
         </a>
         <button
@@ -48,13 +49,18 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-3 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="/index.html">Home</a>
+              <a
+                class="nav-link active p-3 fs-4"
+                aria-current="page"
+                href="/index.html"
+                >Home</a
+              >
             </li>
             <li class="dropdown nav-item">
               <a
-                class="dropdown-toggle nav-link active"
+                class="dropdown-toggle p-3 fs-4 nav-link"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -62,54 +68,57 @@
               >
                 Portfolio
               </a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu bg-danger">
                 <li>
-                  <a
-                    class="dropdown-item active"
-                    aria-current="page"
-                    href="/projecten/Schaakbord.html"
+                  <a class="dropdown-item fs-5" href="projecten/Schaakbord.html"
                     >Schaakbord</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="/projecten/PCB_Horloge.html"
+                  <a
+                    class="dropdown-item fs-5"
+                    href="projecten/PCB_Horloge.html"
                     >PCB Horloge</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="/projecten/Shop_Website.html"
+                  <a
+                    class="dropdown-item fs-5"
+                    href="projecten/Shop_Website.html"
                     >Shop Website</a
                   >
                 </li>
                 <li>
                   <a
-                    class="dropdown-item"
-                    href="/projecten/Multi_Control_Panel.html"
+                    class="dropdown-item fs-5"
+                    href="projecten/Multi_Control_Panel.html"
                     >Multi-Control Panel</a
                   >
                 </li>
                 <li>
                   <a
-                    class="dropdown-item"
-                    href="/projecten/Single_Board_Computer.html"
+                    class="dropdown-item fs-5"
+                    href="projecten/Single_Board_Computer.html"
                     >Single Board Computer</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="/projecten/Smart_Serre.html"
+                  <a
+                    class="dropdown-item fs-5"
+                    href="projecten/Smart_Serre.html"
                     >Smart Serre</a
                   >
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="/portfolio.html"
+                  <a class="dropdown-item fs-5" href="/portfolio.html"
                     >Overzicht Projecten</a
                   >
                 </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/contact.html">Contact</a>
+              <a class="nav-link p-3 fs-4" href="/contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -119,29 +128,36 @@
     <div class="container-fluid">
       <div class="row">
         <aside class="col-md aside-length">
-          <h2 class="text-uppercase fw-bolder fs-4 pt-3">Portfolio</h2>
+          <div class="sticky-top pt-3">
+            <h2 class="text-uppercase fw-bolder fs-2 p-2">Portfolio</h2>
 
-          <p class="oranje">
-            <a
-              class="fw-bold fs-5 text-decoration-underline"
-              href="Schaakbord.html"
-              >Schaakbord</a
-            >
-            <br />
-            <a class="" href="PCB_Horloge.html">PCB Horloge</a>
-            <br />
-            <a class="" href="Shop_Website.html">Shop Website</a>
-            <br />
-            <a class="" href="Multi_Control_Panel.html">Multi-Control Panel</a>
-            <br />
-            <a class="" href="Single_Board_Computer.html"
-              >Single Board Computer</a
-            >
-            <br />
-            <a class="" href="Smart_Serre.html">Smart Serre</a>
-          </p>
+            <p class="oranje">
+              <a
+                class="fw-bold mb-2 fs-2 text-decoration-underline"
+                href="Schaakbord.html"
+                >Schaakbord</a
+              >
+              <br />
+              <a class="fs-5" href="PCB_Horloge.html">PCB Horloge</a>
+              <br />
+              <a class="fs-5" href="Shop_Website.html">Shop Website</a>
+              <br />
+
+              <a class="fs-5" href="Multi_Control_Panel.html"
+                >Multi-Control Panel</a
+              >
+              <br />
+
+              <a class="fs-5" href="Single_Board_Computer.html"
+                >Single Board Computer</a
+              >
+              <br />
+
+              <a class="fs-5" href="Smart_Serre.html">Slimme serre</a>
+            </p>
+          </div>
         </aside>
-        <main class="col-md col-12">
+        <main class="col-md col-12 p-5">
           <h2 class="text-uppercase fs-5 fw-bolder pt-3">Schaakbord</h2>
           <p>
             Als start van het project zijn we begonnen met een brainstorm.
@@ -154,7 +170,7 @@
           <section class="row pb-1">
             <a class="col-12 col-md-6 mb-5"
               ><img
-                src="/assets/images/Schaakbord/Afbeelding2.png"
+                src="/assets/images/schaakbord-afbeelding2.png"
                 width="100%"
                 height="100%"
               />
@@ -162,7 +178,7 @@
             </a>
             <a class="col-12 col-md-6"
               ><img
-                src="/assets/images/Schaakbord/Afbeelding1.png"
+                src="/assets/images/schaakbord-afbeelding1.png"
                 width="100%"
                 height="90%"
               />
@@ -187,7 +203,7 @@
           <section class="row pb-1">
             <a class="col-12 col-md-6 mb-5"
               ><img
-                src="/assets/images/Schaakbord/Afbeelding3.png"
+                src="/assets/images/schaakbord-afbeelding3.png"
                 width="100%"
                 height="100%"
               />
@@ -195,7 +211,7 @@
             </a>
             <a class="col-12 col-md-6 mb-5"
               ><img
-                src="/assets/images/Schaakbord/Afbeelding4.png"
+                src="/assets/images/schaakbord-afbeelding4.png"
                 width="100%"
                 height="100%"
               />
@@ -227,7 +243,7 @@
 
             <a class="col-12 col-md-6 mb-5"
               ><img
-                src="/assets/images/Schaakbord/Afbeelding5.png"
+                src="/assets/images/schaakbord-afbeelding5.png"
                 width="100%"
                 height="100%"
               />
@@ -238,7 +254,7 @@
             3D geprinten schaakstukken
           </h2>
           <section class="row pb-1">
-            <div class="col-md-6 mb-5">
+            <div class="col-xl-6 mb-5">
               <h2 class="text-uppercase fs-6 pt-3">Bovenwereld</h2>
               <table title="Bovenwereld" class="table table-danger">
                 <thead>
@@ -260,7 +276,7 @@
                     </td>
                     <td>
                       <img
-                        src="/assets/images/Schaakbord/Afbeelding18.jpg"
+                        src="/assets/images/schaakbord-afbeelding18.jpg"
                         alt="Steve"
                       />
                     </td>
@@ -275,7 +291,7 @@
                     </td>
                     <td>
                       <img
-                        src="/assets/images/Schaakbord/Afbeelding19.jpg"
+                        src="/assets/images/schaakbord-afbeelding19.jpg"
                         alt="Alex"
                       />
                     </td>
@@ -286,7 +302,7 @@
                     <td>/</td>
                     <td>
                       <img
-                        src="/assets/images/Schaakbord/Afbeelding8.jpg"
+                        src="/assets/images/schaakbord-afbeelding8.jpg"
                         alt="Iron Golem"
                       />
                     </td>
@@ -301,7 +317,7 @@
                     </td>
                     <td>
                       <img
-                        src="/assets/images/Schaakbord/Afbeelding9.jpg"
+                        src="/assets/images/schaakbord-afbeelding9.jpg"
                         alt="Horse"
                       />
                     </td>
@@ -315,7 +331,7 @@
                     </td>
                     <td>
                       <img
-                        src="/assets/images/Schaakbord/Afbeelding10.jpg"
+                        src="/assets/images/schaakbord-afbeelding10.jpg"
                         alt="Creeper"
                       />
                     </td>
@@ -329,7 +345,7 @@
                     </td>
                     <td>
                       <img
-                        src="/assets/images/Schaakbord/Afbeelding11.jpg"
+                        src="/assets/images/schaakbord-afbeelding11.jpg"
                         alt="Baby villager"
                       />
                     </td>
@@ -358,7 +374,7 @@
                     </td>
                     <td>
                       <img
-                        src="/assets/images/Schaakbord/Afbeelding12.jpg"
+                        src="/assets/images/schaakbord-afbeelding12.jpg"
                         alt="Wither"
                       />
                     </td>
@@ -373,7 +389,7 @@
                     </td>
                     <td>
                       <img
-                        src="/assets/images/Schaakbord/Afbeelding13.jpg"
+                        src="/assets/images/schaakbord-afbeelding13.jpg"
                         alt="Blaze"
                       />
                     </td>
@@ -388,7 +404,7 @@
                     </td>
                     <td>
                       <img
-                        src="/assets/images/Schaakbord/Afbeelding14.png"
+                        src="/assets/images/schaakbord-afbeelding14.png"
                         alt="Wither Skeleton"
                       />
                     </td>
@@ -402,7 +418,7 @@
                     </td>
                     <td>
                       <img
-                        src="/assets/images/Schaakbord/Afbeelding15.jpg"
+                        src="/assets/images/schaakbord-afbeelding15.jpg"
                         alt="Hoglin"
                       />
                     </td>
@@ -413,7 +429,7 @@
                     <td>/</td>
                     <td>
                       <img
-                        src="/assets/images/Schaakbord/Afbeelding16.jpg"
+                        src="/assets/images/schaakbord-afbeelding16.jpg"
                         alt="Enderman"
                       />
                     </td>
@@ -424,7 +440,7 @@
                     <td>/</td>
                     <td>
                       <img
-                        src="/assets/images/Schaakbord/Afbeelding17.jpg"
+                        src="/assets/images/schaakbord-afbeelding17.jpg"
                         alt="Baby piglin"
                       />
                     </td>
@@ -437,7 +453,7 @@
       </div>
     </div>
     <footer class="container-fluid text-start bg-danger h6 small p-4">
-      &copy; 2025-2026 | Hadis Hasan Bas |
+      &copy; 2025-<a id="year"></a> | Hadis Hasan Bas |
       <a class="text-dark" href="#top">Top</a>
     </footer>
   </body>

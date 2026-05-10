@@ -1,0 +1,11 @@
+#mijnMap {
+  /* neem de volle breedte in van het parent element en heeft een hoogte van 250px */
+  height: 350px;
+  width: 100%;
+}
+
+#apMap {
+  /* neem de volle breedte in van het parent element en heeft een hoogte van 250px */
+  height: 350px;
+  width: 100%;
+}
