@@ -44,6 +44,10 @@ figcaption {
   max-height: 250px;
   object-fit: cover;
 }
+
+.video {
+  height: 20px;
+}
 .aside-length {
   max-width: 225px;
 }
@@ -66,6 +70,55 @@ section {
 
 footer {
   margin-bottom: 0 !important ;
+}
+
+.custom-nav,
+.custom-footer {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-danger-rgb), var(--bs-bg-opacity));
+  color: black;
+}
+
+body.light-mode {
+  background-color: #f5f5f5;
+}
+
+.light-mode .custom-footer,
+.light-mode .custom-nav {
+  background-color: #8c1c65;
+  color: wheat;
+}
+
+body.light-mode .custom-nav a,
+body.light-mode .custom-nav button {
+  color: wheat;
+}
+
+body.light-mode main,
+body.light-mode aside,
+body.light-mode i,
+body.light-mode figcaption {
+  background-color: white;
+  color: #d92b5a;
+}
+
+.bg-danger {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-danger-rgb), var(--bs-bg-opacity)) !important;
+}
+
+/* Links en tekst in main/aside */
+body.light-mode main a,
+body.light-mode aside a,
+body.light-mode main p,
+body.light-mode aside p,
+body.light-mode main h1,
+body.light-mode main h2,
+body.light-mode main h3,
+body.light-mode aside h1,
+body.light-mode aside h2,
+body.light-mode aside h3 {
+  color: #d92b5a;
 }
 @media (min-width: 767.98px) {
   aside {

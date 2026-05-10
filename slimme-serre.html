@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="nl-BE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schaakbord</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <script src="js/thema.js" defer></script>
+  </head>
+
+  <body class="m-0 border-0 bd-example">
+    <header>
+      <nav class="navbar navbar-expand-md custom-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" id="top"
+            ><img
+              src="assets/images/logo.png"
+              alt="Logo"
+              width="175"
+              height="120"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-3 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link p-3 fs-4" href="index.html">Home</a>
+              </li>
+              <li class="dropdown nav-item">
+                <a
+                  class="dropdown-toggle p-3 fs-4 nav-link active"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Portfolio
+                </a>
+                <ul class="dropdown-menu custom-footer">
+                  <li>
+                    <a class="dropdown-item fs-5" href="schaakbord.html"
+                      >Schaakbord</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" href="pcb-horloge.html"
+                      >PCB Horloge</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" href="shop-website.html"
+                      >Shop Website</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" href="control-panel.html"
+                      >Control Panel</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item fs-5"
+                      href="single-board-computer.html"
+                      >Single Board Computer</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item fs-5 active"
+                      aria-current="page"
+                      href="slimme-serre.html"
+                      >Slimme Serre</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item fs-5" href="portfolio.html"
+                      >Overzicht Projecten</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-3 fs-4" href="contact.html">Contact</a>
+              </li>
+              <li><hr class="divider" /></li>
+              <li>
+                <button id="themeToggle" class="p-3 fs-4 btn btn-ligh">
+                  Verander kleuren
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container-fluid">
+      <div class="row">
+        <aside class="col-md aside-length">
+          <div class="sticky-top pt-3">
+            <h2 class="text-uppercase fw-bolder fs-2 p-2">Portfolio</h2>
+
+            <p class="oranje">
+              <a class="fs-5 ps-1" href="schaakbord.html">Schaakbord</a>
+              <br />
+              <a class="fs-5 ps-1" href="pcb-horloge.html">PCB Horloge</a>
+              <br />
+              <a class="fs-5 ps-1" href="shop-website.html">Shop Website</a>
+              <br />
+
+              <a class="fs-5 ps-1" href="control-panel.html">Control Panel</a>
+              <br />
+
+              <a class="fs-5 ps-1" href="single-board-computer.html"
+                >Single Board Computer</a
+              >
+              <br />
+
+              <a
+                class="fw-bold fs-2 ps-2 text-decoration-underline"
+                href="slimme-serre.html"
+                >Slimme serre</a
+              >
+            </p>
+          </div>
+        </aside>
+        <main class="col-md col-12 p-5">
+          <h2 class="text-uppercase fs-3 fw-bolder">Slimme Serre</h2>
+          <p class="fs-5">
+            Ik ga een slimme serre maken. Deze serre maakt gebruik van
+            verschillende sensoren om zo optimaal mogelijk planten te laten
+            groeien. Het zal ook sensoren gebruiken voor security.
+            <br />
+            <br />
+            Dit is een systeem die docker compose gebruikt om verschillende
+            meetingen te maken en deze te visualiseren op Grafana. Deze doen we
+            door gebruik te maken met Eclipse Mosquitto, Influxdb3, Nodered en
+            een python script.
+            <br /><br />Ik gebruik hier Raspberry Pi 5 en ESP32-C3 Super Mini.
+          </p>
+          <h2 class="text-uppercase fs-3 fw-bolder">Benodigdheden</h2>
+          <table title="Benodigheden" class="table table-danger fs-5">
+            <thead>
+              <tr>
+                <th scope="col">Sensor/component</th>
+                <th scope="col">Reden</th>
+                <th scope="col">Extra’s</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Temperature and Humidity Sensor</td>
+                <td>
+                  Om de temperatuur en vochtigheid te meten van de serre,
+                  wanneer het te warm is zal er automatisch een raam geopend
+                  worden.
+                </td>
+                <td>De raam wordt voorgesteld door een ledje.</td>
+              </tr>
+              <tr>
+                <td>Photoresistor</td>
+                <td>
+                  Om de hoeveelheid licht te meten. Bij weinig licht zal de
+                  speciale kweeklampen branden.
+                </td>
+                <td>De kweeklampen worden voorgesteld door een ledje.</td>
+              </tr>
+              <tr>
+                <td>Reed Switch en Touch Sensor</td>
+                <td>
+                  Om ervoor te zorgen dat de lichten kunnen bediend worden door
+                  te klappen.
+                </td>
+                <td>De lichten worden voorgesteld door een ledje.</td>
+              </tr>
+              <tr>
+                <td>Flame Sensor</td>
+                <td>Om brand te detecteren.</td>
+                <td>/</td>
+              </tr>
+              <tr>
+                <td>Ultras sensor</td>
+                <td>Om te zien dat er geen vogels binnen vliegen.</td>
+                <td>/</td>
+              </tr>
+              <tr>
+                <td>Buzzer</td>
+                <td>
+                  Wanneer er een vogel binnen vliegt zal er een geluidje
+                  afspelen om de vogels weg te jagen.
+                </td>
+                <td>/</td>
+              </tr>
+              <tr>
+                <td>Esp 32</td>
+                <td>Microcontroller</td>
+                <td>/</td>
+              </tr>
+            </tbody>
+          </table>
+          <h2 class="text-uppercase fs-3 fw-bolder">Verbinding</h2>
+          <p class="fs-5">
+            De read switch en touch sensor zullen verbonden zijn met de esp 32.
+            De rest van de sensoren zullen direct verbonden zijn met de
+            Raspberry Pi.
+          </p>
+          <section class="row pb-1">
+            <a class="col-12 col-xl-6 mb-5"
+              ><img
+                src="assets/images/slimme-serre-afbeelding1.jpg"
+                width="100%"
+                height="90%"
+              />
+              <figcaption>Figuur 1: Verbinding ESP-32</figcaption>
+            </a>
+            <a class="col-12 col-xl-6 mb-5"
+              ><img
+                src="assets/images/slimme-serre-afbeelding2.jpg"
+                width="100%"
+                height="90%"
+              />
+              <figcaption>Figuur 2: Verbinding Raspberry Pi 5</figcaption>
+            </a>
+          </section>
+          <h2 class="text-uppercase fs-3 fw-bolder">Traefik</h2>
+          <p class="fs-5">
+            Met Traefik kan ik gebruik maken van een reverse proxy. Ik heb met
+            deze ervoor gezorgd dat de Node-Red en Grafana pagina op een andere
+            Ip adress te vinden zijn, namelijk http://"IP"/nodered en
+            http://"IP"/grafana. Maar hierop gaan we niet surfen. Ik gebruik
+            pangolin uw deze twee URL's publiek te maken voor iedereen. De
+            pangolin domein is gegeven door de lector. Is dus niet gratis.
+          </p>
+          <h2 class="text-uppercase fs-3 fw-bolder">InfluxDB3</h2>
+          <p class="fs-5">
+            De Raspberry Pi 5 kan geen Influxdb3 runnen, omdat deze te
+            ingewikkeld is voor de Raspberry. Mijn oplossing hiervoor is om mijn
+            database te laten runnen op mijn eigen laptop. Dit doe je door de
+            volgende te doen:
+          </p>
+          <div>
+            <ol class="fs-5 list-group list-group-numbered pb-3">
+              <li class="list-group-item list-group-item-danger">
+                Download Influxdb3 Core,
+                <a href="https://docs.influxdata.com/influxdb3/core/install/">
+                  Link voor instalatie</a
+                >
+              </li>
+              <li class="list-group-item list-group-item-danger">
+                Unzip de gedownloade zip file.
+              </li>
+              <li class="list-group-item list-group-item-danger">
+                Ga vanuit uw command prompt naar de gezipte file.
+              </li>
+              <li class="list-group-item list-group-item-danger">
+                Voer de volgende code uit, influxdb3 serve --node-id host01
+                --object-store file --data-dir ~/.influxdb3
+              </li>
+              <li class="list-group-item list-group-item-danger">
+                Maak een token met, influxdb3 create token –admin
+              </li>
+              <li class="list-group-item list-group-item-danger">
+                Maak database, influxdb3 create database "database_naam"
+              </li>
+              <li class="list-group-item list-group-item-danger">
+                Controle dat database gemaakt is, influxdb3 show databases
+                --host "IP_laptop" --token "Token_key"
+              </li>
+            </ol>
+          </div>
+          <h2 class="text-uppercase fs-3 fw-bolder">Node-Red</h2>
+
+          <section class="row pb-5">
+            <div class="col-12 col-md-8 pb-3">
+              <p class="fs-5">
+                Doordat ik influxdb3 gebruik ziet Node-Red iets anders uit dan
+                normaal. Eerst download node-red-contrib-influxdb3 pallete voor
+                de Influxdb3 write node te gebruiken
+              </p>
+              <ol class="fs-5 list-group list-group-numbered">
+                <li class="list-group-item list-group-item-danger">
+                  Hier is een voorbeeld van een inkomende MQTT bericht.
+                </li>
+                <li class="list-group-item list-group-item-danger">
+                  Ik gebruik een change node om elke waarde apart te nemen.
+                </li>
+                <li class="list-group-item list-group-item-danger">
+                  Hierachter moet een functie node komen om de vorige waarde te
+                  omzetten naar iets die de Influxdb3 write node kan gebruiken.
+                </li>
+                <li class="list-group-item list-group-item-danger">
+                  Steek de juiste waarde in de write node.
+                </li>
+              </ol>
+            </div>
+            <a class="col-12 col-md-4"
+              ><img
+                src="assets/images/slimme-serre-afbeelding6.jpg"
+                width="100%"
+                height="100%"
+              />
+              <figcaption>Figuur 5: function node</figcaption>
+            </a>
+          </section>
+          <section class="row">
+            <a class="col-12 col-md-2 pb-5"
+              ><img
+                src="assets/images/slimme-serre-afbeelding3.jpg"
+                width="100%"
+                height="100%"
+              />
+              <figcaption>Figuur 3: MQTT bericht</figcaption>
+            </a>
+            <a class="col-12 col-md-5 pb-5"
+              ><img
+                src="assets/images/slimme-serre-afbeelding4.jpg"
+                width="100%"
+                height="100%"
+              />
+              <figcaption>Figuur 4: Change node</figcaption>
+            </a>
+            <a class="col-12 col-md-5 pb-5"
+              ><img
+                src="assets/images/slimme-serre-afbeelding5.jpg"
+                width="100%"
+                height="100%"
+              />
+              <figcaption>Figuur 5: Write node</figcaption>
+            </a>
+          </section>
+          <h2 class="text-uppercase fs-3 fw-bolder">Node-Red Dashboard</h2>
+          <p class="fs-5">
+            Dit is een manier om vanuit Node-Red uw ledjes te bedienen.
+          </p>
+          <div>
+            <ol class="fs-5 list-group list-group-numbered pb-3">
+              <li class="list-group-item list-group-item-danger">
+                Download de node-red-dashboard pallete voor de juiste nodes.
+              </li>
+              <li class="list-group-item list-group-item-danger">
+                Gebruik een switch node en vul de gegevens in.
+              </li>
+              <li class="list-group-item list-group-item-danger">
+                Zet hierachter een mqtt out node en vul de gegevens in.
+              </li>
+              <li class="list-group-item list-group-item-danger">
+                Door te surfen naar https://"IP"/nodered/ui, kan je uw lichten
+                bedienen.
+              </li>
+            </ol>
+          </div>
+          <h2 class="text-uppercase fs-3 fw-bolder">Grafana</h2>
+          <p class="fs-5">
+            Door Influxdb3 is hier ook verschillende dingens die je moet doen.
+          </p>
+          <div>
+            <ol class="fs-5 list-group list-group-numbered pb-3">
+              <li class="list-group-item list-group-item-danger">
+                Ga bij de linkse zijbar naar connections en add new connections.
+              </li>
+              <li class="list-group-item list-group-item-danger">
+                Kies voor InfluxDB.
+              </li>
+              <li class="list-group-item list-group-item-danger">
+                Pak als url voor de connectie met de database.
+              </li>
+              <li class="list-group-item list-group-item-danger">
+                Bij database zet u de gekozen naam voor uw database.
+              </li>
+              <li class="list-group-item list-group-item-danger">
+                Bij Token pak je de gemaakte token van uw database.
+              </li>
+            </ol>
+          </div>
+          <p class="fs-5">
+            Nu kan je starten bij het visualiseren van uw waarden.
+          </p>
+          <div>
+            <ol class="fs-5 list-group list-group-numbered pb-3">
+              <li class="list-group-item list-group-item-danger">
+                Add visualisatie
+              </li>
+              <li class="list-group-item list-group-item-danger">
+                Kies voor Time series
+              </li>
+              <li class="list-group-item list-group-item-danger">
+                Bij query kies je de data source die je hierboven hebt gemaakt.
+                (connections)
+              </li>
+              <li class="list-group-item list-group-item-danger">
+                In de query code moet je SQL code schrijven. Hier een voorbeeld,
+                SELECT * FROM temperature_c ORDER BY time DESC;
+              </li>
+            </ol>
+          </div>
+          <section class="row">
+            <div class="col-12 col-xl-6 pt-6">
+              <table title="grafieke1" class="table table-danger fs-5">
+                <thead>
+                  <tr>
+                    <th scope="col">
+                      Time series <br />
+                      Geeft waarde in verband met tijd
+                    </th>
+                    <th scope="col">
+                      Status history <br />
+                      Geeft booleaanse visualisatie
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Temperatuur meetingen</td>
+                    <td>Deur open</td>
+                  </tr>
+                  <tr>
+                    <td>Vochtigheids meetingen</td>
+                    <td>Kweeklichten branden</td>
+                  </tr>
+                  <tr>
+                    <td>Touch sensor</td>
+                    <td>Raam open</td>
+                  </tr>
+                  <tr>
+                    <td>Reed switch</td>
+                    <td>Lichten gaan aan</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>Buzzer gaat aan</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-12 col-xl-6 pt-6">
+              <table title="grafieke2" class="table table-danger fs-5">
+                <thead>
+                  <tr>
+                    <th scope="col">
+                      Stat <br />
+                      Visualisatie van een specifieke waarde
+                    </th>
+                    <th scope="col">
+                      Bar chart <br />
+                      Visualisatie van categorie data
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Ultra sonar sensor</td>
+                    <td>Aantal keren opening van deur</td>
+                  </tr>
+                  <tr>
+                    <td>Photoresistor sensor</td>
+                    <td>Aantal keren opening van raam</td>
+                  </tr>
+                  <tr>
+                    <td>Flame sensor</td>
+                    <td>Aantal keren branding van kweeklichten</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <h2 class="text-uppercase fs-3 fw-bolder">Uitkomsten</h2>
+
+          <section class="row pb-5">
+            <div class="col-12 col-xl-6 pb-3">
+              <a
+                ><img
+                  src="assets/images/slimme-serre-afbeelding7.jpg"
+                  width="100%"
+                  height="60%"
+                />
+                <figcaption>Figuur 6: Node-Red</figcaption>
+              </a>
+              <a
+                ><img
+                  src="assets/images/slimme-serre-afbeelding8.jpg"
+                  width="100%"
+                  height="35%"
+                />
+                <figcaption>Figuur 7: Node-Red Dashboard</figcaption>
+              </a>
+            </div>
+            <a class="col-12 col-xl-6 pb-3"
+              ><img
+                src="assets/images/slimme-serre-afbeelding9.jpg"
+                width="100%"
+                height="100%"
+              />
+              <figcaption>Figuur 8: Grafana</figcaption>
+            </a>
+          </section>
+          <h2 class="text-uppercase fs-3 fw-bolder">Troubleshoot</h2>
+          <p class="fs-5">
+            Ik heb geen manier gevonden om vanuit de dockerfile mijn GPIO's aan
+            te sturen. Ik heb hiervoor mijn script laten runnen op een andere
+            terminal binnenin de Raspberry. Hiervoor moet je eerst wel een
+            virtueel environment maken. <br />Dit doe je door:
+          </p>
+          <div>
+            <ol class="fs-5 list-group list-group-numbered pb-3">
+              <li class="list-group-item list-group-item-danger">
+                python3 -m venv venv, om een virtual env te maken.
+              </li>
+              <li class="list-group-item list-group-item-danger">
+                source venv/bin/activate, om de virtual env te opstarten.
+              </li>
+            </ol>
+          </div>
+          <h2 class="text-uppercase fs-3 fw-bolder">Proces</h2>
+          <p class="fs-5">
+            Dag 1 begon al niet goed bij mij. We kregen eerst uitleg hoe je uw
+            GPIO’s kunt aansturen binnen in docker. Deze werkte niet bij mij.
+            Blijkt dus dat de standaard GPIO libraries, RPI GPIO, niet werkt met
+            Raspberry Pi 5. Ik moest dus andere manieren vinden om de GPIO’s in
+            praat te krijgen. Ik heb de eerste dag de volle 6 tot 7 uur bezig
+            gezeten en zitten opzoeken of er een andere manier was hiervoor. Ik
+            kon persoonlijk nergens iets vinden. Er waren verschillende
+            libraries, namelijk: pigpio, gpiozero en libgpiod. Er zijn meerdere,
+            maar deze waren de meest gebruikte en de beste die werkte voor mij.
+            Deze werkten enkel buiten mijn docker, vanaf dat ik de GPIO’s wou
+            aansturen binnen in mijn docker, dan liep het volledig fout.
+            <br /><br />
+            Na een heledag opzoeken waarom dit niet werkt. Heb ik gevraagd aan
+            de meneer of ik buiten mijn docker de python script kon runnen en
+            dit mocht.
+            <br /><br />
+            Zoals ik al zei werkt Influxdb3 niet op een Raspberry Pi 5. Dus heb
+            ik deze gerunned op mijn eigen laptop. Er werd later gevraagd aan
+            mij of deze in een docker zat, maar helaas heb ik dit niet gedaan,
+            omdat ik er niet bij stilstond dat dit een optie was.
+            <br /><br />
+            Bij Node-Red had ik het moeilijk met het schrijven van de functie
+            nodes, aangezien deze correct moeten zijn voor de influxdb write
+            node.
+            <br /><br />
+            Op Grafana moest ik SQL code gebruiken om mijn queries te schrijven,
+            gelukkig heb ik twee jaar geleden al iets gezien over databases, dus
+            dit was niet volledig nieuw voor mij. Wat mij wel problemen gaf was
+            het maken van een bar chart. Ik kreeg deze maar niet te praat. Ik
+            heb dan overgeschakeld naar een bar gauge.
+            <br /><br />
+            Verder was ik eerst van plan een Cloudfare te gebruiken voor mijn
+            publieke access, maar wanneer ik zo goed als klaar was werkte deze
+            niet. Ik moest blijkbaar mijn eigen domein aankopen, iets dat ik
+            niet wou doen. Dus heb ik overgeschakeld naar Pangolin. Deze was
+            veel simpeler en de meeste dingens waren voor mij al in orde
+            gebracht. Het moeilijke hieraan is weten welke labels ik moest
+            gebruiken om iets te doen werken, welke labels bij andere labels
+            werkt en welke totaal niet werkte. Uiteindelijk heb ik de public
+            access kunnen regelen.
+          </p>
+        </main>
+      </div>
+    </div>
+    <footer class="container-fluid text-start custom-footer h6 small p-4">
+      &copy; 2025-<a id="year"></a> | Hadis Hasan Bas |
+      <a class="text-dark" href="#top">Top</a>
+    </footer>
+  </body>
+</html>

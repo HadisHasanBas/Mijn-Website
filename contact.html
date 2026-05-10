@@ -38,110 +38,111 @@
     <script src="js/script.js" defer></script>
     <script src="js/map-mijn.js" defer></script>
     <script src="js/map-ap.js" defer></script>
+    <script src="js/thema.js" defer></script>
   </head>
 
   <body class="m-0 border-0 bd-example">
-    <nav class="navbar navbar-expand-md bg-danger">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#" id="top"
-          ><img
-            src="assets/images/logo.png"
-            alt="Logo"
-            width="175"
-            height="120"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-3 mb-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link active p-3 fs-4"
-                aria-current="page"
-                href="index.html"
-                >Home</a
-              >
-            </li>
-            <li class="dropdown nav-item">
-              <a
-                class="dropdown-toggle p-3 fs-4 nav-link"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Portfolio
-              </a>
-              <ul class="dropdown-menu bg-danger">
-                <li>
-                  <a class="dropdown-item fs-5" href="projecten/Schaakbord.html"
-                    >Schaakbord</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item fs-5"
-                    href="projecten/PCB_Horloge.html"
-                    >PCB Horloge</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item fs-5"
-                    href="projecten/Shop_Website.html"
-                    >Shop Website</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item fs-5"
-                    href="projecten/Multi_Control_Panel.html"
-                    >Multi-Control Panel</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item fs-5"
-                    href="projecten/Single_Board_Computer.html"
-                    >Single Board Computer</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item fs-5"
-                    href="projecten/Smart_Serre.html"
-                    >Smart Serre</a
-                  >
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item fs-5" href="portfolio.html"
-                    >Overzicht Projecten</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link p-3 fs-4" href="contact.html">Contact</a>
-            </li>
-          </ul>
+    <header>
+      <nav class="navbar navbar-expand-md custom-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" id="top"
+            ><img
+              src="assets/images/logo.png"
+              alt="Logo"
+              width="175"
+              height="120"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-3 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link p-3 fs-4" href="index.html">Home</a>
+              </li>
+              <li class="dropdown nav-item">
+                <a
+                  class="dropdown-toggle p-3 fs-4 nav-link"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Portfolio
+                </a>
+                <ul class="dropdown-menu custom-footer">
+                  <li>
+                    <a class="dropdown-item fs-5" href="schaakbord.html"
+                      >Schaakbord</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" href="pcb-horloge.html"
+                      >PCB Horloge</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" href="shop-website.html"
+                      >Shop Website</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" href="control-panel.html"
+                      >Control Panel</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item fs-5"
+                      href="single-board-computer.html"
+                      >Single Board Computer</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" href="slimme-serre.html"
+                      >Slimme Serre</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item fs-5" href="portfolio.html"
+                      >Overzicht Projecten</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link p-3 fs-4 active"
+                  aria-current="page"
+                  href="contact.html"
+                  >Contact</a
+                >
+              </li>
+              <li><hr class="divider" /></li>
+              <li>
+                <button id="themeToggle" class="p-3 fs-4 btn btn-ligh">
+                  Verander kleuren
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
     <div class="container-fluid">
       <div class="row">
-        <aside class="col-md aside-length">
+        <aside class="col-md aside-length ps-3">
           <div class="sticky-top pt-3">
             <h2 class="text-uppercase fw-bolder p-2 fs-2">Socials</h2>
 
@@ -183,8 +184,8 @@
             <div id="mijnMap" class="col-12 mb-3"></div>
           </section>
 
-          <h2 class="text-uppercase fs-5 fw-bolder pt-3">contact</h2>
-          <p>
+          <h2 class="text-uppercase fs-3 fw-bolder pt-3">contact</h2>
+          <p class="fs-5">
             Indien vragen over de verschillende projecten of vragen persoonlijk
             naar mij gericht, contacteer mij zeker met de info aan de side tab
             of vul deze formulier in.<br />
@@ -200,11 +201,11 @@
               <input type="hidden" name="form-name" value="contact" />
 
               <fieldset class="mb-3 g-3 row">
-                <legend class="text-uppercase fs-5 fw-bolder pt-3">
+                <legend class="text-uppercase fs-3 fw-bolder pt-3">
                   gegevens
                 </legend>
                 <div class="mb-3 col-12 col-xl-6">
-                  <label for="naamTextInput" class="form-label"
+                  <label for="naamTextInput" class="form-label fs-5"
                     >Voornaam <span>*</span></label
                   >
                   <input
@@ -217,7 +218,7 @@
                   />
                 </div>
                 <div class="mb-3 col-12 col-xl-6">
-                  <label for="achternaamTextInput" class="form-label"
+                  <label for="achternaamTextInput" class="form-label fs-5"
                     >Achternaam</label
                   >
                   <input
@@ -229,7 +230,7 @@
                   />
                 </div>
                 <div class="mb-3 col-xl-12">
-                  <label for="mailTextInput" class="form-label"
+                  <label for="mailTextInput" class="form-label fs-5"
                     >E-mail <span>*</span></label
                   >
                   <input
@@ -242,7 +243,7 @@
                     required
                   />
                 </div>
-                <div class="form-group col-xl-12">
+                <div class="form-group col-xl-12 fs-5">
                   <label for="bericht">Bericht <span>*</span></label>
                   <textarea
                     class="form-control"
@@ -265,7 +266,7 @@
         </main>
       </div>
     </div>
-    <footer class="container-fluid text-start bg-danger h6 small p-4">
+    <footer class="container-fluid text-start custom-footer h6 small p-4">
       &copy; 2025-<a id="year"></a> | Hadis Hasan Bas |
       <a class="text-dark" href="#top">Top</a>
     </footer>

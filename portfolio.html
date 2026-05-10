@@ -24,110 +24,109 @@
     ></script>
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js" defer></script>
+    <script src="js/thema.js" defer></script>
   </head>
 
   <body class="m-0 border-0 bd-example">
-    <nav class="navbar navbar-expand-md bg-danger">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#" id="top"
-          ><img
-            src="assets/images/logo.png"
-            alt="Logo"
-            width="175"
-            height="120"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-3 mb-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link active p-3 fs-4"
-                aria-current="page"
-                href="index.html"
-                >Home</a
-              >
-            </li>
-            <li class="dropdown nav-item">
-              <a
-                class="dropdown-toggle p-3 fs-4 nav-link"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Portfolio
-              </a>
-              <ul class="dropdown-menu bg-danger">
-                <li>
-                  <a class="dropdown-item fs-5" href="projecten/Schaakbord.html"
-                    >Schaakbord</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item fs-5"
-                    href="projecten/PCB_Horloge.html"
-                    >PCB Horloge</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item fs-5"
-                    href="projecten/Shop_Website.html"
-                    >Shop Website</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item fs-5"
-                    href="projecten/Multi_Control_Panel.html"
-                    >Multi-Control Panel</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item fs-5"
-                    href="projecten/Single_Board_Computer.html"
-                    >Single Board Computer</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item fs-5"
-                    href="projecten/Smart_Serre.html"
-                    >Smart Serre</a
-                  >
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item fs-5" href="portfolio.html"
-                    >Overzicht Projecten</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link p-3 fs-4" href="contact.html">Contact</a>
-            </li>
-          </ul>
+    <header>
+      <nav class="navbar navbar-expand-md custom-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" id="top"
+            ><img
+              src="assets/images/logo.png"
+              alt="Logo"
+              width="175"
+              height="120"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-3 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link p-3 fs-4" href="index.html">Home</a>
+              </li>
+              <li class="dropdown nav-item">
+                <a
+                  class="dropdown-toggle p-3 fs-4 nav-link active"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Portfolio
+                </a>
+                <ul class="dropdown-menu custom-footer">
+                  <li>
+                    <a class="dropdown-item fs-5" href="schaakbord.html"
+                      >Schaakbord</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" href="pcb-horloge.html"
+                      >PCB Horloge</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" href="shop-website.html"
+                      >Shop Website</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" href="control-panel.html"
+                      >Control Panel</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item fs-5"
+                      href="single-board-computer.html"
+                      >Single Board Computer</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" href="slimme-serre.html"
+                      >Slimme Serre</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item fs-5 active"
+                      aria-current="page"
+                      href="portfolio.html"
+                      >Overzicht Projecten</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-3 fs-4" href="contact.html">Contact</a>
+              </li>
+              <li><hr class="divider" /></li>
+              <li>
+                <button id="themeToggle" class="p-3 fs-4 btn btn-ligh">
+                  Verander kleuren
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
     <div class="container-fluid">
       <div class="row">
-        <aside class="col-md aside-length">
+        <aside class="col-md aside-length ps-3">
           <div class="sticky-top pt-3">
             <h2 class="text-uppercase fw-bolder p-2 fs-2">Socials</h2>
 
@@ -166,16 +165,16 @@
 
         <main class="col-md col-12 row">
           <article class="col-12 col-xl-4 col-md-6">
-            <h2 class="text-uppercase fs-5 fw-bolder pt-3">Schaakbord</h2>
+            <h2 class="text-uppercase fs-3 fw-bolder pt-3">Schaakbord</h2>
 
-            <a href="projecten/Schaakbord.html" rel="noopener">
+            <a href="schaakbord.html" rel="noopener">
               <figure>
                 <img
                   src="assets/images/schaakbord.webp"
                   class="img-fluid"
                   height="100%"
                 />
-                <figcaption class="fs-6 small mt-2">
+                <figcaption class="fs-5 small mt-2">
                   Een schaakbord die zelf gemaakt is met een lasercutter met
                   3D-geprinte pionnen.
                 </figcaption>
@@ -183,16 +182,16 @@
             </a>
           </article>
           <article class="col-12 col-xl-4 col-md-6">
-            <h2 class="text-uppercase fs-5 fw-bolder pt-3">PCB Horloge</h2>
+            <h2 class="text-uppercase fs-3 fw-bolder pt-3">PCB Horloge</h2>
 
-            <a href="projecten/PCB_Horloge.html" rel="noopener">
+            <a href="pcb-horloge.html" rel="noopener">
               <figure>
                 <img
                   src="assets/images/pcb-horloge.webp"
                   class="img-fluid"
                   height="100%"
                 />
-                <figcaption class="fs-6 small mt-2">
+                <figcaption class="fs-5 small mt-2">
                   PCB design gemaakt voor een horloge, waar we alle componenten
                   erop moesten solderen en deze aan de hand van een ATTiny-45
                   zelf moesten programeren.
@@ -201,15 +200,15 @@
             </a>
           </article>
           <article class="col-12 col-xl-4 col-md-6">
-            <h2 class="text-uppercase fs-5 fw-bolder pt-3">Shop Website</h2>
-            <a href="projecten/Shop_Website.html" rel="noopener">
+            <h2 class="text-uppercase fs-3 fw-bolder pt-3">Shop Website</h2>
+            <a href="shop-website.html" rel="noopener">
               <figure>
                 <img
                   src="assets/images/website.webp"
                   class="img-fluid"
                   height="100%"
                 />
-                <figcaption class="fs-6 small mt-2">
+                <figcaption class="fs-5 small mt-2">
                   Eigen website gemaakt voor een kleren winkel, gewerkt met
                   html, css, javascript, env.
                 </figcaption>
@@ -217,17 +216,17 @@
             </a>
           </article>
           <article class="col-12 col-xl-4 col-md-6">
-            <h2 class="text-uppercase fs-5 fw-bolder pt-3">
+            <h2 class="text-uppercase fs-3 fw-bolder pt-3">
               Multi Control Panel
             </h2>
-            <a href="projecten/Multi_Control_Panel.html" rel="noopener">
+            <a href="control-panel.html" rel="noopener">
               <figure>
                 <img
                   src="assets/images/multicontrol.webp"
                   class="img-fluid"
                   height="100%"
                 />
-                <figcaption class="fs-6 small mt-2">
+                <figcaption class="fs-5 small mt-2">
                   Door een zelfgemaakte PCB bordje en een Raspberry Pi Pico, heb
                   ik een panel gemaakt die kunt gebruiken voor uw computer. Deze
                   heeft een volume control en 8 knoppen waar je alles op kan
@@ -237,17 +236,17 @@
             </a>
           </article>
           <article class="col-12 col-xl-4 col-md-6">
-            <h2 class="text-uppercase fs-5 fw-bolder pt-3">
+            <h2 class="text-uppercase fs-3 fw-bolder pt-3">
               Single Board Computer
             </h2>
-            <a href="projecten/Single_Board_Computer.html" rel="noopener">
+            <a href="single-board-computer.html" rel="noopener">
               <figure>
                 <img
                   src="assets/images/sbc.webp"
                   class="img-fluid"
                   height="100%"
                 />
-                <figcaption class="fs-6 small mt-2">
+                <figcaption class="fs-5 small mt-2">
                   Via MQTT berichten data verzamelen van verschillende sensoren
                   en deze doen tonen aan de hand van Raspberry Pi 5.
                 </figcaption>
@@ -255,15 +254,15 @@
             </a>
           </article>
           <article class="col-12 col-xl-4 col-md-6">
-            <h2 class="text-uppercase fs-5 fw-bolder pt-3">Smart Serre</h2>
-            <a href="projecten/Smart_Serre.html" rel="noopener">
+            <h2 class="text-uppercase fs-3 fw-bolder pt-3">Slimme Serre</h2>
+            <a href="slimme-serre.html" rel="noopener">
               <figure>
                 <img
                   src="assets/images/slimme-serre.webp"
                   class="img-fluid"
                   height="100%"
                 />
-                <figcaption class="fs-6 small mt-2">
+                <figcaption class="fs-5 small mt-2">
                   Aan de hand van een verschillende sensoren en apparaten een
                   slimme serre opbouwen, de gemeten waarden en standen van elk
                   onderdeel visualiseren op grafieken via Grafana
@@ -274,7 +273,7 @@
         </main>
       </div>
     </div>
-    <footer class="container-fluid text-start bg-danger h6 small p-4">
+    <footer class="container-fluid text-start custom-footer h6 small p-4">
       &copy; 2025-<a id="year"></a> | Hadis Hasan Bas |
       <a class="text-dark" href="#top">Top</a>
     </footer>

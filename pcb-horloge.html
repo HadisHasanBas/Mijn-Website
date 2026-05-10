@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="nl-BE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schaakbord</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <script src="js/thema.js" defer></script>
+  </head>
+
+  <body class="m-0 border-0 bd-example">
+    <header>
+      <nav class="navbar navbar-expand-md custom-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" id="top"
+            ><img
+              src="assets/images/logo.png"
+              alt="Logo"
+              width="175"
+              height="120"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-3 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link p-3 fs-4" href="index.html">Home</a>
+              </li>
+              <li class="dropdown nav-item">
+                <a
+                  class="dropdown-toggle p-3 fs-4 nav-link active"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Portfolio
+                </a>
+                <ul class="dropdown-menu custom-footer">
+                  <li>
+                    <a class="dropdown-item fs-5" href="schaakbord.html"
+                      >Schaakbord</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item fs-5 active"
+                      aria-current="page"
+                      href="pcb-horloge.html"
+                      >PCB Horloge</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" href="shop-website.html"
+                      >Shop Website</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" href="control-panel.html"
+                      >Control Panel</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item fs-5"
+                      href="single-board-computer.html"
+                      >Single Board Computer</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" href="slimme-serre.html"
+                      >Slimme Serre</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item fs-5" href="portfolio.html"
+                      >Overzicht Projecten</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-3 fs-4" href="contact.html">Contact</a>
+              </li>
+              <li><hr class="divider" /></li>
+              <li>
+                <button id="themeToggle" class="p-3 fs-4 btn btn-ligh">
+                  Verander kleuren
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container-fluid">
+      <div class="row">
+        <aside class="col-md aside-length">
+          <div class="sticky-top pt-3">
+            <h2 class="text-uppercase fw-bolder fs-2 p-2">Portfolio</h2>
+
+            <p class="oranje">
+              <a class="fs-5 ps-1" href="schaakbord.html">Schaakbord</a>
+              <br />
+              <a
+                class="fw-bold fs-2 ps-2 text-decoration-underline"
+                href="pcb-horloge.html"
+                >PCB Horloge</a
+              >
+              <br />
+              <a class="fs-5 ps-1" href="shop-website.html">Shop Website</a>
+              <br />
+
+              <a class="fs-5 ps-1" href="control-panel.html">Control Panel</a>
+              <br />
+
+              <a class="fs-5 ps-1" href="single-board-computer.html"
+                >Single Board Computer</a
+              >
+              <br />
+
+              <a class="fs-5 ps-1" href="slimme-serre.html">Slimme serre</a>
+            </p>
+          </div>
+        </aside>
+        <main class="col-md col-12 p-5">
+          <h2 class="text-uppercase fs-3 fw-bolder">PCB-Horloge</h2>
+          <section class="row">
+            <p class="col-12 col-md-9 fs-5">
+              Voor het vak Embedded System Design ontwikkelde ik een
+              programmeerbaar PCB-horloge waarbij zowel hardware als software
+              centraal stonden. Tijdens dit project werkte ik aan het ontwerpen,
+              solderen, testen en programmeren van een embedded systeem met
+              verschillende elektronische componenten zoals LEDs, drukknoppen,
+              een level-shifter, een MOSFET en een ATtiny814 microcontroller.
+              <br />
+              <br />
+              Er zijn verschillende vereisten om aan deze project te starten.
+              Namelijk: UDPI Connectoren zoals een VCC UDPI en GND, Test point
+              zoals Date LED's en Pin VBAT zodat we componenten van de
+              PCB-Horloge kunnen testen zonder alles in elkaar te steken, een
+              batterij Bypass pads, een High side MOSFET switch bij de LEDs,
+              doordacht componenten selectie en een groundplane.
+            </p>
+            <a class="col-12 col-xl-3 mb-5"
+              ><img
+                src="assets/images/pcb-horloge-afbeelding2.jpg"
+                width="100%"
+                height="100%"
+              />
+              <figcaption>Figuur 1: Voorbeeld PCB-Horloge</figcaption>
+            </a>
+          </section>
+          <section class="row">
+            <h2 class="text-uppercase fs-3 fw-bolder">Eerste versie</h2>
+            <div class="col-12 col-xl-5 pb-5">
+              <p class="fs-5">
+                Het oorspronkelijke doel van het project was het ontwikkelen van
+                een functioneel horloge met LED-weergave voor uren en minuten.
+                Tijdens het project liep ik echter tegen verschillende
+                technische uitdagingen aan, waaronder problemen met de
+                batterijspanning en het ontbreken van een accelerometer voor
+                tijdsdetectie. Hierdoor besloot ik het concept creatief aan te
+                passen en het systeem verder uit te werken als een interactieve
+                stopwatch met LED-animaties.
+
+                <br />
+                <br />
+                De binnenste LED-ring telt seconden, terwijl de buitenste ring
+                volledige rotaties bijhoudt. Daarnaast implementeerde ik
+                verschillende functies via drukknoppen, zoals: <br />
+              </p>
+              <ul class="list-group fs-5 pb-3">
+                <li class="list-group-item list-group-item-danger">
+                  Starten en pauzeren van de stopwatch
+                </li>
+                <li class="list-group-item list-group-item-danger">
+                  Resetten van de timer
+                </li>
+                <li class="list-group-item list-group-item-danger">
+                  Aan- en uitschakelen van de LEDs via een MOSFET
+                </li>
+                <li class="list-group-item list-group-item-danger">
+                  Een extra LED-lichtshow
+                </li>
+              </ul>
+              <p class="fs-5">
+                Tijdens het project maakte ik intensief gebruik van
+                meetapparatuur zoals multimeters en oscilloscopen om fouten op
+                te sporen en hardwareproblemen te analyseren. Ook leerde ik
+                nauwkeuriger werken tijdens PCB-design, componentselectie en het
+                dubbel controleren van schema’s voordat een PCB geproduceerd
+                wordt.
+              </p>
+              <a class="col-12 col-md-6 col-xl-8 mb-5"
+                ><img
+                  src="assets/images/pcb-horloge-afbeelding5.jpg"
+                  width="100%"
+                  height="20%"
+                />
+                <figcaption>Figuur 2: Meten met multimeter</figcaption>
+              </a>
+            </div>
+            <div class="col-12 col-xl-7 pt-6">
+              <table title="Resultaat" class="table table-danger fs-5">
+                <thead>
+                  <tr>
+                    <th scope="col">Functionaliteit</th>
+                    <th scope="col">Resultaat</th>
+                    <th scope="col">Indien van toepassing: Fout gevonden?</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Werkspanning LEDs</td>
+                    <td>Alle leds werken perfect.</td>
+                    <td>
+                      Ik heb ervoor gezorgd dat ik op dit moment geen
+                      boost-converter nodig had bij het aanzetten van de leds.
+                      Ik heb namelijk de 5V van de arduino gebruikt om mijn leds
+                      spanning te geven.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Werkinspanning alle andere componenten</td>
+                    <td>Alles klopt.</td>
+                    <td>/</td>
+                  </tr>
+                  <tr>
+                    <td>Horloge werkt op batterij</td>
+                    <td>Het werkt op sommige omstandigheden.</td>
+                    <td>
+                      De batterij wilt geen constante 3.3V geven. Dit zorgt
+                      ervoor dat we deze niet perfect kunnen omzetten naar 5V.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Uploaden via UDPI</td>
+                    <td>Ik kan mijn code uploaden zonder problemen.</td>
+                    <td>Geen problemen</td>
+                  </tr>
+                  <tr>
+                    <td>Aansturen van LEDs die uren weergeven</td>
+                    <td>We hebben geen lis2DE12 Accelerometer gebruikt.</td>
+                    <td>
+                      Ik heb code geschreven waarbij de binnencirkel van het
+                      horloge de seconde telt tot 12, dus een volledige rotatie,
+                      en dan de aantal rotaties telt door een ledje te branden
+                      aan de buitencirkel.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Aansturen van LEDs die minuten weergeven</td>
+                    <td>We hebben geen lis2DE12 Accelerometer gebruikt.</td>
+                    <td>
+                      Ik heb code geschreven waarbij de binnencirkel van het
+                      horloge de seconde telt tot 12, dus een volledige rotatie,
+                      en dan de aantal rotaties telt door een ledje te branden
+                      aan de buitencirkel.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Aan / uit schakelen van de LEDs is mogelijk m.b.v. de
+                      mosfet
+                    </td>
+                    <td>k kan de leds aan en uit zetten.</td>
+                    <td>/</td>
+                  </tr>
+                  <tr>
+                    <td>Werking drukknoppen</td>
+                    <td>Werkt perfect</td>
+                    <td>/</td>
+                  </tr>
+                  <tr>
+                    <td>Extern kristal is bruikbaar</td>
+                    <td>Niet gesoldeerd</td>
+                    <td>/</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <section class="row">
+            <p class="col-12 fs-5">
+              De design moesten we maken via Kicad dit is een een gratis,
+              open-source softwarepakket voor electronic design automation
+              (EDA), waarmee gebruikers elektronische schema's en printplaten
+              (PCB's) kunnen ontwerpen. Deze design konden we ook realiseren
+              door deze te sturen en te laten maken. <br /><br />Alvoorens we
+              iets doorsturen om het te doen printen moesten we eerst een
+              schematische voorstelling maken, om aan te tonen dat alles perfect
+              verbonden is met elkaar en te tonen dat alles zeker werkt.
+            </p>
+            <a class="col-12 mb-5"
+              ><img
+                src="assets/images/pcb-horloge-afbeelding1.jpg"
+                width="100%"
+                height="100%"
+              />
+              <figcaption>Figuur 3: Elektrische voorstelling</figcaption>
+            </a>
+            <a class="col-12 col-md-6 mb-5"
+              ><img
+                src="assets/images/pcb-horloge-afbeelding3.jpg"
+                width="100%"
+                height="120%"
+              />
+              <figcaption>Figuur 4: Kicad Top view</figcaption> </a
+            ><a class="col-12 col-md-6 mb-5"
+              ><img
+                src="assets/images/pcb-horloge-afbeelding4.jpg"
+                width="100%"
+                height="100%"
+              />
+              <figcaption>Figuur 5: Kicad Bottom view</figcaption>
+            </a>
+          </section>
+          <h2 class="text-uppercase fs-3 fw-bolder">Video</h2>
+          <p class="fs-5">
+            In de video ziet u verschillende dingen. Eerste is het aan en uit
+            zetten van de Leds met behulp van knop 4, linksboven. Vervolgens
+            ziet u de stopwatch zien werken met de start en stop knop 1,
+            rechtsboven. Je ziet dat als het is gepauzeerd dan kan ik op knop 3,
+            linksonder, drukken om een licht show te geven. Deze blijft draaien
+            tot ik terug op de knop druk. Knop 2, rechtsonder, zorgt ervoor dat
+            de stopwatch reset.
+          </p>
+          <video
+            src="assets/videos/pcb-horloge-finale-test-default.mp4"
+            width="600"
+            class="col-12 col-xl-6"
+            controls
+          ></video>
+          <figcaption>
+            <a
+              href="https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=80c1c0df-6e46-4d07-8055-b2f6013cf3b1"
+              >Video: Werking PCB Horloge</a
+            >
+          </figcaption>
+        </main>
+      </div>
+    </div>
+    <footer class="container-fluid text-start custom-footer h6 small p-4">
+      &copy; 2025-<a id="year"></a> | Hadis Hasan Bas |
+      <a class="text-dark" href="#top">Top</a>
+    </footer>
+  </body>
+</html>

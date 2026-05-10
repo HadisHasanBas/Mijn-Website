@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="nl-BE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schaakbord</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <script src="js/thema.js" defer></script>
+  </head>
+
+  <body class="m-0 border-0 bd-example">
+    <header>
+      <nav class="navbar navbar-expand-md custom-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" id="top"
+            ><img
+              src="assets/images/logo.png"
+              alt="Logo"
+              width="175"
+              height="120"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-3 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link p-3 fs-4" href="index.html">Home</a>
+              </li>
+              <li class="dropdown nav-item">
+                <a
+                  class="dropdown-toggle p-3 fs-4 nav-link active"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Portfolio
+                </a>
+                <ul class="dropdown-menu custom-footer">
+                  <li>
+                    <a class="dropdown-item fs-5" href="schaakbord.html"
+                      >Schaakbord</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" href="pcb-horloge.html"
+                      >PCB Horloge</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" href="shop-website.html"
+                      >Shop Website</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" href="control-panel.html"
+                      >Control Panel</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item fs-5 active"
+                      aria-current="page"
+                      href="single-board-computer.html"
+                      >Single Board Computer</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" href="slimme-serre.html"
+                      >Slimme Serre</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item fs-5" href="portfolio.html"
+                      >Overzicht Projecten</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-3 fs-4" href="contact.html">Contact</a>
+              </li>
+              <li><hr class="divider" /></li>
+              <li>
+                <button id="themeToggle" class="p-3 fs-4 btn btn-ligh">
+                  Verander kleuren
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container-fluid">
+      <div class="row">
+        <aside class="col-md aside-length">
+          <div class="sticky-top pt-3">
+            <h2 class="text-uppercase fw-bolder fs-2 p-2">Portfolio</h2>
+
+            <p class="oranje">
+              <a class="fs-5 ps-1" href="schaakbord.html">Schaakbord</a>
+              <br />
+              <a class="fs-5 ps-1" href="pcb-horloge.html">PCB Horloge</a>
+              <br />
+              <a class="fs-5 ps-1" href="shop-website.html">Shop Website</a>
+              <br />
+
+              <a class="fs-5 ps-1" href="control-panel.html">Control Panel</a>
+              <br />
+
+              <a
+                class="fw-bold fs-2 ps-2 text-decoration-underline"
+                href="single-board-computer.html"
+                >Single Board Computer</a
+              >
+              <br />
+
+              <a class="fs-5 ps-1" href="slimme-serre.html">Slimme serre</a>
+            </p>
+          </div>
+        </aside>
+        <main class="col-md col-12 p-5">
+          <h2 class="text-uppercase fs-3 fw-bolder">Single Board Computer</h2>
+          <p class="col-12 fs-5">
+            In dit project ontwierpen en realiseerden we een gedistribueerd
+            IoT-systeem dat in staat is om de lichtintensiteit in drie
+            verschillende ruimtes te meten. Hiervoor maakten we gebruik van
+            LDR-sensoren gekoppeld aan een Arduino, die verantwoordelijk is voor
+            het periodiek inlezen van de analoge lichtwaarden. Deze meetgegevens
+            worden vervolgens via I²C-communicatie doorgestuurd naar een
+            centrale Raspberry Pi, die fungeert als gegevensverzamelpunt en
+            MQTT-broker.
+            <br /><br />
+            Het systeem bestaat uit drie Raspberry Pi’s, elk met een eigen rol:
+            één Pi ontvangt en verspreidt de data via MQTT, een tweede
+            visualiseert de lichtgegevens op een dashboard, en een derde
+            analyseert de gegevens om een LED aan te sturen op basis van het
+            waargenomen lichtniveau. Deze modulaire opzet laat toe om elk
+            onderdeel afzonderlijk te ontwikkelen, testen en verbeteren.
+            <br /><br />
+            Het doel van dit project is om inzicht te verwerven in real-time
+            dataverwerking binnen een IoT-omgeving, waarbij verschillende
+            componenten met elkaar communiceren via gestandaardiseerde
+            protocollen. Daarnaast willen we aantonen hoe meetdata automatisch
+            kunnen leiden tot actie — in dit geval de aansturing van een LED op
+            basis van de lichtsterkte. Het project combineert hardware- en
+            softwareaspecten en vormt een mooie praktijkoefening in het
+            ontwerpen van een werkend en uitbreidbaar IoT-systeem.
+          </p>
+          <h2 class="text-uppercase fs-3 fw-bolder">
+            Doelstelling van het project
+          </h2>
+
+          <ul class="list-group fs-5 pb-3 col-12">
+            <li class="list-group-item list-group-item-danger">
+              - Licht meten met meerdere LDR-sensoren.
+            </li>
+            <li class="list-group-item list-group-item-danger">
+              - Waarden verzenden van Arduino naar Raspberry Pi’s via I²C.
+            </li>
+            <li class="list-group-item list-group-item-danger">
+              - Real-time communicatie opzetten via MQTT.
+            </li>
+            <li class="list-group-item list-group-item-danger">
+              - Dashboard bouwen dat live data visualiseert.
+            </li>
+            <li class="list-group-item list-group-item-danger">
+              - Automatische LED-aansturing implementeren afhankelijk van
+              lichtniveau.
+            </li>
+          </ul>
+          <h2 class="text-uppercase fs-3 fw-bolder">Systeemarchitectuur</h2>
+          <p class="fs-5">Componenten:</p>
+          <ul class="list-group fs-5 pb-3 col-12">
+            <li class="list-group-item list-group-item-danger">
+              - 3x Arduino Nano
+            </li>
+            <li class="list-group-item list-group-item-danger">
+              - 3x Raspberry Pi (Broker, Dashboard, Actuator)
+            </li>
+            <li class="list-group-item list-group-item-danger">
+              - 3x LDR-sensoren
+            </li>
+            <li class="list-group-item list-group-item-danger">
+              - LED op GPIO 18
+            </li>
+          </ul>
+          <section class="row">
+            <a class="col-12 col-xl-5"
+              ><img
+                src="assets/images/sbc-afbeelding2.jpg"
+                width="100%"
+                height="80%"
+              />
+              <figcaption>Figuur 1: Raspberry Pi 1</figcaption>
+            </a>
+            <a class="col-9 col-xl-5"
+              ><img
+                src="assets/images/sbc-afbeelding1.jpg"
+                width="100%"
+                height="80%"
+              />
+              <figcaption>Figuur 2: Arduino Nano 1</figcaption>
+            </a>
+
+            <a class="col-3 col-xl-2"
+              ><img
+                src="assets/images/sbc-afbeelding3.jpg"
+                width="100%"
+                height="80%"
+              />
+              <figcaption>Figuur 3: LDR sensor 1</figcaption>
+            </a>
+          </section>
+          <p class="fs-5">
+            Datastroom: LDR (Arduino) → I²C → Pi A (Broker) → MQTT → Pi B
+            (Dashboard) & Pi C (LED)
+          </p>
+          <section class="row">
+            <div class="col-12 col-xl-4">
+              <h2 class="text-uppercase fs-3 fw-bolder">State diagram</h2>
+              <a
+                ><img
+                  src="assets/images/sbc-afbeelding4.jpg"
+                  width="100%"
+                  height="80%"
+                />
+                <figcaption>Figuur 4: State diagram</figcaption>
+              </a>
+            </div>
+            <div class="col-12 col-xl-8">
+              <h2 class="text-uppercase fs-3 fw-bolder">Gebruikte hardware</h2>
+              <table title="Benodigheden" class="table table-danger fs-5">
+                <thead>
+                  <tr>
+                    <th scope="col">Component</th>
+                    <th scope="col">Aantal</th>
+                    <th scope="col">Functie</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Arduino Nano</td>
+                    <td>3</td>
+                    <td>Uitlezen LDR</td>
+                  </tr>
+                  <tr>
+                    <td>LDR-sensoren</td>
+                    <td>3</td>
+                    <td>Lichtmeting per ruimte</td>
+                  </tr>
+                  <tr>
+                    <td>Raspberry Pi</td>
+                    <td>3</td>
+                    <td>Broker, dashboard, LED</td>
+                  </tr>
+                  <tr>
+                    <td>LED</td>
+                    <td>1</td>
+                    <td>Actuatie op basis van licht</td>
+                  </tr>
+                  <tr>
+                    <td>Weerstanden</td>
+                    <td>3</td>
+                    <td>Voltage-deler met LDR</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h2 class="text-uppercase fs-3 fw-bolder">Gebruikte software</h2>
+              <ul class="list-group fs-5">
+                <li class="list-group-item list-group-item-danger">
+                  - Talen: C++ (Arduino), Python (MQTT + dashboard), HTML/CSS/JS
+                  (Chart.js)
+                </li>
+                <li class="list-group-item list-group-item-danger">
+                  - Libraries: paho-mqtt, smbus, gpiozero, Flask, Chart.js
+                </li>
+                <li class="list-group-item list-group-item-danger">
+                  - Tools: Visual Studio Code, Thonny, VNC, RealVNC, SSH
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="row">
+            <div class="col-12 col-xl-6">
+              <h2 class="text-uppercase fs-3 fw-bolder">Communicatiestroom</h2>
+              <ol class="fs-5 list-group list-group-numbered pb-3 fs-5">
+                <li class="list-group-item list-group-item-danger">
+                  Arduino meet licht via LDR.
+                </li>
+                <li class="list-group-item list-group-item-danger">
+                  Data wordt verzonden via I²C naar Pi A.
+                </li>
+                <li class="list-group-item list-group-item-danger">
+                  Pi A publiceert waarden op MQTT-topic "sensors/ldr/all".
+                </li>
+                <li class="list-group-item list-group-item-danger">
+                  Pi B leest deze waarden in en toont ze in een dashboard via
+                  Flask + Chart.js.
+                </li>
+                <li class="list-group-item list-group-item-danger">
+                  Pi C gebruikt deze MQTT-data om een LED aan te sturen op basis
+                  van de hoeveelheid donkerte:
+                </li>
+                <ul class="list-group ps-4">
+                  <li class="list-group-item list-group-item-danger">
+                    - 3x donker: LED 100% (aan)
+                  </li>
+                  <li class="list-group-item list-group-item-danger">
+                    - 1–2x donker: LED 50%
+                  </li>
+                  <li class="list-group-item list-group-item-danger">
+                    - 0x donker: LED 0% (uit)
+                  </li>
+                </ul>
+              </ol>
+            </div>
+            <div class="col-12 col-xl-6">
+              <h2 class="text-uppercase fs-3 fw-bolder">
+                Technische uitdagingen en oplossingen
+              </h2>
+              <table title="Benodigheden" class="table table-danger fs-5">
+                <thead>
+                  <tr>
+                    <th scope="col">Component</th>
+                    <th scope="col">Aantal</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Wi-Fi verbinden met schoolnetwerk</td>
+                    <td>
+                      `wpa_supplicant.conf` correct geconfigureerd en of sd
+                      kaart flashen
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>I²C-data te kort</td>
+                    <td>Correcte byteopbouw gebruikt (high + low byte)</td>
+                  </tr>
+                  <tr>
+                    <td>Dashboard synchronisatie</td>
+                    <td>`deque(maxlen=180)` buffers gebruikt</td>
+                  </tr>
+                  <tr>
+                    <td>LED flikkert</td>
+                    <td>PWM-waarden netjes beperkt via `gpiozero.PWMLED`</td>
+                  </tr>
+                  <tr>
+                    <td>MQTT latency</td>
+                    <td>Gebalanceerd door 1 Hz updatefrequentie</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <h2 class="text-uppercase fs-3 fw-bolder">Hardware bedrading</h2>
+          <section class="row">
+            <a class="col-12 col-xl-6"
+              ><img
+                src="assets/images/sbc-afbeelding5.jpg"
+                width="100%"
+                height="80%"
+              />
+              <figcaption>
+                Figuur 5: Raspberry Pi met de Arduino (voor de I²C communicatie)
+              </figcaption>
+            </a>
+            <a class="col-12 col-xl-6"
+              ><img
+                src="assets/images/sbc-afbeelding6.jpg"
+                width="100%"
+                height="80%"
+              />
+              <figcaption>Figuur 6: Arduino Nano met de LDR-sensor</figcaption>
+            </a>
+          </section>
+          <h2 class="text-uppercase fs-3 fw-bolder">
+            Screenshots en visualisaties
+          </h2>
+          <section class="row">
+            <a class="col-12 col-md-6 col-xl-3"
+              ><img
+                src="assets/images/sbc-afbeelding7.jpg"
+                width="100%"
+                height="80%"
+              />
+              <figcaption>Figuur 7: Broker opstelling</figcaption>
+            </a>
+            <a class="col-12 col-md-6 col-xl-3"
+              ><img
+                src="assets/images/sbc-afbeelding8.jpg"
+                width="100%"
+                height="80%"
+              />
+              <figcaption>Figuur 8: Dashboard opstelling</figcaption>
+            </a>
+            <a class="col-12 col-md-6 col-xl-3"
+              ><img
+                src="assets/images/sbc-afbeelding9.jpg"
+                width="100%"
+                height="80%"
+              />
+              <figcaption>Figuur 9: Led opstelling</figcaption>
+            </a>
+            <a class="col-12 col-md-6 col-xl-3"
+              ><img
+                src="assets/images/sbc-afbeelding10.jpg"
+                width="100%"
+                height="80%"
+              />
+              <figcaption>Figuur 10: Signalen inlezen</figcaption>
+            </a>
+            <a class="col-12"
+              ><img
+                src="assets/images/sbc-afbeelding11.jpg"
+                width="100%"
+                height="80%"
+              />
+              <figcaption>Figuur 11: Dashboard meet data</figcaption>
+            </a>
+          </section>
+          <h2 class="text-uppercase fs-3 fw-bolder">Conclusie en reflectie</h2>
+          <p class="fs-5">
+            Tijdens dit project hebben we een functioneel en modulair
+            IoT-systeem ontwikkeld waarbij elke student verantwoordelijk was
+            voor een specifiek technisch onderdeel. Dankzij deze duidelijke
+            taakverdeling konden we efficiënt samenwerken en het project
+            stapsgewijs en gestructureerd opbouwen. De combinatie van real-time
+            communicatie en afzonderlijke subsystemen zorgde ervoor dat het
+            geheel soepel samenwerkte.
+            <br /><br />
+            De groepssamenwerking verliep bijzonder goed. We overlegden
+            regelmatig over de voortgang en verdeelden de taken in onderling
+            overleg. Wanneer iemand vastliep, stonden de anderen altijd klaar om
+            mee naar oplossingen te zoeken. Ook het bijhouden van een digitaal
+            logboek hielp ons om overzicht te houden en de communicatie
+            transparant te houden. Dit zorgde voor rust, overzicht en een
+            efficiënte workflow binnen de groep.
+            <br /><br />
+            Het project bood ons de kans om niet alleen aan de slag te gaan met
+            sensoruitlezing en datacommunicatie, maar ook met datavisualisatie
+            en automatisering. We leerden hoe we meetgegevens konden omzetten in
+            concrete acties, zoals de aansturing van een LED op basis van
+            lichtwaarden. Daarnaast deden we praktijkervaring op met seriële
+            communicatie, I²C, MQTT, Python-programmering, Flask-dashboards en
+            GPIO-actuatie.
+            <br /><br />
+            Tot slot kijken we terug op een leerrijk traject waarin
+            samenwerking, technische kennis en probleemoplossend denken centraal
+            stonden.
+          </p>
+          <h2 class="text-uppercase fs-3 fw-bolder">Video</h2>
+          <p class="fs-5">Video waar we testen</p>
+          <video
+            src="assets/videos/sbc-project-video.mov"
+            width="600"
+            class="col-12 col-xl-6"
+            controls
+          ></video>
+          <figcaption>Video: Testen Project</figcaption>
+        </main>
+      </div>
+    </div>
+    <footer class="container-fluid text-start custom-footer h6 small p-4">
+      &copy; 2025-<a id="year"></a> | Hadis Hasan Bas |
+      <a class="text-dark" href="#top">Top</a>
+    </footer>
+  </body>
+</html>

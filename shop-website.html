@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="nl-BE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schaakbord</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <script src="js/thema.js" defer></script>
+  </head>
+
+  <body class="m-0 border-0 bd-example">
+    <header>
+      <nav class="navbar navbar-expand-md custom-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" id="top"
+            ><img
+              src="assets/images/logo.png"
+              alt="Logo"
+              width="175"
+              height="120"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-3 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link p-3 fs-4" href="index.html">Home</a>
+              </li>
+              <li class="dropdown nav-item">
+                <a
+                  class="dropdown-toggle p-3 fs-4 nav-link active"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Portfolio
+                </a>
+                <ul class="dropdown-menu custom-footer">
+                  <li>
+                    <a class="dropdown-item fs-5" href="schaakbord.html"
+                      >Schaakbord</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" href="pcb-horloge.html"
+                      >PCB Horloge</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item fs-5 active"
+                      aria-current="page"
+                      href="shop-website.html"
+                      >Shop Website</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" href="control-panel.html"
+                      >Control Panel</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item fs-5"
+                      href="single-board-computer.html"
+                      >Single Board Computer</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" href="slimme-serre.html"
+                      >Slimme Serre</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item fs-5" href="portfolio.html"
+                      >Overzicht Projecten</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-3 fs-4" href="contact.html">Contact</a>
+              </li>
+              <li><hr class="divider" /></li>
+              <li>
+                <button id="themeToggle" class="p-3 fs-4 btn btn-ligh">
+                  Verander kleuren
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container-fluid">
+      <div class="row">
+        <aside class="col-md aside-length">
+          <div class="sticky-top pt-3">
+            <h2 class="text-uppercase fw-bolder fs-2 p-2">Portfolio</h2>
+
+            <p class="oranje">
+              <a class="fs-5 ps-1" href="schaakbord.html">Schaakbord</a>
+              <br />
+              <a class="fs-5 ps-1" href="pcb-horloge.html">PCB Horloge</a>
+              <br />
+              <a
+                class="fw-bold fs-2 ps-2 text-decoration-underline"
+                href="shop-website.html"
+                >Shop Website</a
+              >
+              <br />
+
+              <a class="fs-5 ps-1" href="control-panel.html">Control Panel</a>
+              <br />
+
+              <a class="fs-5 ps-1" href="single-board-computer.html"
+                >Single Board Computer</a
+              >
+              <br />
+
+              <a class="fs-5 ps-1" href="slimme-serre.html">Slimme serre</a>
+            </p>
+          </div>
+        </aside>
+        <main class="col-md col-12 p-5">
+          <section class="row">
+            <div class="col-12">
+              <h2 class="text-uppercase fs-3 fw-bolder">Show Website</h2>
+              <p class="fs-5">
+                Voor dit project ontwikkelde ik een moderne en responsieve
+                webshopinterface voor het fictieve merk Nordica in het kader van
+                het vak Web Technology. Het doel van de opdracht was om een
+                gebruiksvriendelijke en visueel aantrekkelijke website te bouwen
+                waarin bezoekers eenvoudig producten kunnen bekijken, filteren
+                en navigeren. Tijdens het volledige ontwikkelproces stond zowel
+                functionaliteit als design centraal.
+                <br /><br />
+                Ik maakte gebruik van HTML, CSS en JavaScript om de
+                verschillende onderdelen van de website op te bouwen. De
+                structuur van de pagina werd zorgvuldig uitgewerkt zodat de
+                inhoud overzichtelijk en logisch georganiseerd bleef. Met CSS
+                werkte ik aan de volledige vormgeving van de interface,
+                waaronder de lay-out, kleuren, typografie en responsive
+                elementen. Hierbij hield ik rekening met verschillende
+                schermgroottes zodat de website optimaal functioneert op zowel
+                desktop, tablet als smartphone.
+                <br /><br />
+                Daarnaast implementeerde ik interactieve functionaliteiten met
+                JavaScript. Zo ontwikkelde ik een filter- en sorteersysteem
+                waarmee gebruikers producten eenvoudiger kunnen terugvinden. Ook
+                voegde ik een dark mode/thema-switch toe om de
+                gebruikerservaring persoonlijker en moderner te maken. Verder
+                werkte ik aan een mobiele navigatie en interactieve componenten
+                die de website dynamischer maken.
+                <br /><br />
+                Naast de technische uitwerking besteedde ik ook aandacht aan
+                gebruiksvriendelijkheid en gebruikerservaring. Ik probeerde een
+                duidelijke navigatiestructuur te creëren en een consistente
+                visuele stijl aan te houden doorheen de volledige website.
+                Hierdoor oogt de interface professioneel en intuïtief voor de
+                gebruiker.
+                <br /><br />
+                Door dit project heb ik mijn kennis van front-end development
+                verder verdiept. Ik leerde efficiënter werken met responsieve
+                layouts, interactieve JavaScript-functionaliteiten en moderne
+                webdesignprincipes. Daarnaast verbeterde ik mijn
+                probleemoplossend vermogen door zelfstandig oplossingen te
+                zoeken voor technische uitdagingen tijdens het ontwikkelproces.
+                Dit project gaf me meer inzicht in hoe een moderne webinterface
+                opgebouwd wordt en hoe design en functionaliteit elkaar
+                versterken binnen een gebruiksvriendelijke website.
+              </p>
+              <h2 class="text-uppercase fs-3 fw-bolder">
+                Verschil tussen bootstrap en css?
+              </h2>
+              <p class="fs-5">
+                Het verschil tussen CSS en Bootstrap is vooral dat CSS een
+                stijltaal is, terwijl Bootstrap een framework is dat CSS (en
+                JavaScript) gebruikt om sneller websites te bouwen.
+                <br /><br />
+                CSS (Cascading Style Sheets) gebruik je om zelf de vormgeving
+                van een website te bepalen. Hiermee kan je bijvoorbeeld kleuren,
+                lettertypes, marges, animaties en layouts aanpassen. Met gewone
+                CSS schrijf je alles zelf, waardoor je volledige controle hebt
+                over het design. Dat maakt het flexibel, maar het kost vaak meer
+                tijd.
+                <br /><br />
+                Bootstrap is een vooraf gemaakte verzameling van CSS- en
+                JavaScriptcomponenten. Het bevat kant-en-klare stijlen voor
+                knoppen, navigaties, formulieren, grids en veel meer. In plaats
+                van alles zelf te schrijven, gebruik je bestaande classes van
+                Bootstrap. Daardoor kan je sneller een responsive website maken.
+              </p>
+              <h2 class="text-uppercase fs-3 fw-bolder">
+                Belangrijkste verschillen
+              </h2>
+              <table title="grafieke2" class="table table-danger fs-5">
+                <thead>
+                  <tr>
+                    <th scope="col">CSS</th>
+                    <th scope="col">Bootstrap</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Je schrijft alle styling zelf</td>
+                    <td>Gebruikt vooraf gemaakte stijlen</td>
+                  </tr>
+                  <tr>
+                    <td>Volledige vrijheid in design</td>
+                    <td>Sneller ontwikkelen</td>
+                  </tr>
+                  <tr>
+                    <td>Meer werk en code</td>
+                    <td>Minder code nodig</td>
+                  </tr>
+                  <tr>
+                    <td>Geen ingebouwde componenten</td>
+                    <td>Veel ingebouwde componenten</td>
+                  </tr>
+                  <tr>
+                    <td>Je moet responsive gedrag zelf maken</td>
+                    <td>Responsive systeem zit ingebouwd</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <section class="row pb-2">
+            <a class="col-4 col-md-2 pb-5"
+              ><img
+                src="assets/images/shop-website-afbeelding1.jpg"
+                width="100%"
+                height="100%"
+              />
+              <figcaption>Figuur 1: Stijl.css 1</figcaption>
+            </a>
+            <a class="col-4 col-md-2 pb-5"
+              ><img
+                src="assets/images/shop-website-afbeelding2.jpg"
+                width="100%"
+                height="100%"
+              />
+              <figcaption>Figuur 2: Stijl.css 2</figcaption>
+            </a>
+            <a class="col-4 col-md-2 pb-5"
+              ><img
+                src="assets/images/shop-website-afbeelding3.jpg"
+                width="100%"
+                height="100%"
+              />
+              <figcaption>Figuur 3: Stijl.css 3</figcaption>
+            </a>
+            <a class="col-6 col-md-2 pb-5"
+              ><img
+                src="assets/images/shop-website-afbeelding4.jpg"
+                width="100%"
+                height="100%"
+              />
+              <figcaption>Figuur 4: Stijl.css 4</figcaption>
+            </a>
+            <a class="col-6 col-md-2 pb-5"
+              ><img
+                src="assets/images/shop-website-afbeelding5.jpg"
+                width="100%"
+                height="100%"
+              />
+              <figcaption>Figuur 5: Stijl.css 5</figcaption>
+            </a>
+          </section>
+
+          <h2 class="text-uppercase fs-3 fw-bolder">Video</h2>
+          <p class="fs-5">In de video ziet u de werking van de website.</p>
+          <video
+            src="assets/videos/shop-website.mp4"
+            width="600"
+            class="col-12 col-xl-6"
+            controls
+          ></video>
+          <figcaption>Video: Werking Show Website</figcaption>
+        </main>
+      </div>
+    </div>
+    <footer class="container-fluid text-start custom-footer h6 small p-4">
+      &copy; 2025-<a id="year"></a> | Hadis Hasan Bas |
+      <a class="text-dark" href="#top">Top</a>
+    </footer>
+  </body>
+</html>

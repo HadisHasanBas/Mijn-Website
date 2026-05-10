@@ -24,110 +24,111 @@
     ></script>
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js" defer></script>
+    <script src="js/thema.js" defer></script>
   </head>
 
   <body class="m-0 border-0 bd-example">
-    <nav class="navbar navbar-expand-md bg-danger">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#" id="top"
-          ><img
-            src="assets/images/logo.png"
-            alt="Logo"
-            width="175"
-            height="120"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-3 mb-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link active p-3 fs-4"
-                aria-current="page"
-                href="index.html"
-                >Home</a
-              >
-            </li>
-            <li class="dropdown nav-item">
-              <a
-                class="dropdown-toggle p-3 fs-4 nav-link"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Portfolio
-              </a>
-              <ul class="dropdown-menu bg-danger">
-                <li>
-                  <a class="dropdown-item fs-5" href="projecten/Schaakbord.html"
-                    >Schaakbord</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item fs-5"
-                    href="projecten/PCB_Horloge.html"
-                    >PCB Horloge</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item fs-5"
-                    href="projecten/Shop_Website.html"
-                    >Shop Website</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item fs-5"
-                    href="projecten/Multi_Control_Panel.html"
-                    >Multi-Control Panel</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item fs-5"
-                    href="projecten/Single_Board_Computer.html"
-                    >Single Board Computer</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item fs-5"
-                    href="projecten/Smart_Serre.html"
-                    >Smart Serre</a
-                  >
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item fs-5" href="portfolio.html"
-                    >Overzicht Projecten</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link p-3 fs-4" href="contact.html">Contact</a>
-            </li>
-          </ul>
+    <header>
+      <nav class="navbar navbar-expand-md custom-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" id="top"
+            ><img
+              src="assets/images/logo.png"
+              alt="Logo"
+              width="175"
+              height="120"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-3 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active p-3 fs-4"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="dropdown nav-item">
+                <a
+                  class="dropdown-toggle p-3 fs-4 nav-link"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Portfolio
+                </a>
+                <ul class="dropdown-menu custom-footer">
+                  <li>
+                    <a class="dropdown-item fs-5" href="schaakbord.html"
+                      >Schaakbord</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" href="pcb-horloge.html"
+                      >PCB Horloge</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" href="shop-website.html"
+                      >Shop Website</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" href="control-panel.html"
+                      >Control Panel</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item fs-5"
+                      href="single-board-computer.html"
+                      >Single Board Computer</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" href="slimme-serre.html"
+                      >Slimme Serre</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item fs-5" href="portfolio.html"
+                      >Overzicht Projecten</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-3 fs-4" href="contact.html">Contact</a>
+              </li>
+              <li><hr class="divider" /></li>
+              <li>
+                <button id="themeToggle" class="p-3 fs-4 btn btn-ligh">
+                  Verander kleuren
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
     <div class="container-fluid">
       <div class="row">
-        <aside class="col-md aside-length">
+        <aside class="col-md aside-length ps-3">
           <div class="sticky-top pt-3">
             <h2 class="text-uppercase fw-bolder p-2 fs-2">Socials</h2>
 
@@ -206,6 +207,7 @@
                   class="d-block w-100"
                   alt="sfeerbeeld1"
                 />
+                <figcaption class="fs-5 small mt-2">Pixabay</figcaption>
                 <div class="carousel-caption d-none d-md-block">
                   <h5>IoT Dashboard</h5>
                   <p>Het kunnen verzamelen van data en kunnen visualiseren</p>
@@ -217,6 +219,7 @@
                   class="d-block w-100"
                   alt="sfeerbeeld2"
                 />
+                <figcaption class="fs-5 small mt-2">Pixabay</figcaption>
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Cyber Security</h5>
                   <p>Het implementeren van veiligheidsprotocolen</p>
@@ -228,6 +231,7 @@
                   class="d-block w-100"
                   alt="sfeerbeeld3"
                 />
+                <figcaption class="fs-5 small mt-2">Pixabay</figcaption>
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Switching</h5>
                   <p>
@@ -242,6 +246,7 @@
                   class="d-block w-100"
                   alt="sfeerbeeld4"
                 />
+                <figcaption class="fs-5 small mt-2">Pixabay</figcaption>
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Raspberry Pi</h5>
                   <p>Kunnen werken met een Raspberry Pi en data verzamelen.</p>
@@ -253,6 +258,7 @@
                   class="d-block w-100"
                   alt="sfeerbeeld5"
                 />
+                <figcaption class="fs-5 small mt-2">Pixabay</figcaption>
                 <div class="carousel-caption d-none d-md-block">
                   <h5>IoT Programming</h5>
                   <p>Het kunnen programeren van arduino toestellen.</p>
@@ -287,7 +293,7 @@
           <section class="row">
             <a class="col-3 max_grote"
               ><img
-                src="assets/images/Professionele foto.png"
+                src="assets/images/professionele-foto.png"
                 width="100%"
                 height="100%"
               />
@@ -301,7 +307,7 @@
             </div>
           </section>
           <article class="col-12 mb-3">
-            <p>
+            <p class="fs-5">
               Mijn naam is Hadis Hasan Bas, ik ben 24 jaar oud en een
               gemotiveerde student met een sterke interesse in technologie en
               innovatie. Mijn academische traject startte aan de Universiteit
@@ -337,7 +343,7 @@
           <section class="row">
             <h2 class="text-uppercase fs-5 fw-bolder pt-3">Vorige Projecten</h2>
             <article class="col-12 col-md-4 text-center mb-3">
-              <a href="projecten/Schaakbord.html" rel="opener">
+              <a href="schaakbord.html" rel="opener">
                 <figure>
                   <img
                     src="assets/images/schaakbord.webp"
@@ -349,7 +355,7 @@
               </a>
             </article>
             <article class="text-center col-12 col-md-4">
-              <a href="projecten/PCB_Horloge.html" rel="noopener">
+              <a href="pcb-horloge.html" rel="noopener">
                 <figure>
                   <img
                     src="assets/images/pcb-horloge.webp"
@@ -361,7 +367,7 @@
               </a>
             </article>
             <article class="col-12 col-md-4 text-center">
-              <a href="projecten/Shop_Website.html" rel="noopener">
+              <a href="shop-website.html" rel="noopener">
                 <figure>
                   <img
                     src="assets/images/website.webp"
@@ -376,7 +382,7 @@
         </main>
       </div>
     </div>
-    <footer class="container-fluid bg-danger text-start h6 small p-4">
+    <footer class="container-fluid custom-footer text-start h6 small p-4">
       &copy; 2025-<a id="year"></a> | Hadis Hasan Bas |
       <a class="text-dark" href="#top">Top</a>
     </footer>
