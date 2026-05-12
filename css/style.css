@@ -37,7 +37,7 @@ figcaption {
 }
 
 .auto_text {
-  font-size: 2.5vw;
+  font-size: 5vw;
 }
 
 .picture {
@@ -120,9 +120,13 @@ body.light-mode aside h2,
 body.light-mode aside h3 {
   color: #d92b5a;
 }
+
 @media (min-width: 767.98px) {
   aside {
     display: block;
+  }
+  .auto_text {
+    font-size: 2.5vw;
   }
 
   section {
